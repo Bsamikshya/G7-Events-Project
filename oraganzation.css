@@ -1,0 +1,270 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+
+.first {
+
+  /* background: url('Assets/uploads/images/start-poster.jpg'); */
+  background-repeat:no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+
+
+}
+
+.second {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .button {
+  position: relative;
+  overflow: hidden;
+  height: 3rem;
+  padding: 0 2rem;
+  margin: 0 35rem;
+  border-radius: 1.5rem;
+  background: #3d3a4e;
+  background-size: 400%;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover::before {
+  transform: scaleX(1);
+}
+
+.button-content {
+  position: relative;
+  z-index: 1;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left:0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(
+    82.3deg,
+    rgba(150, 93, 233, 1) 10.8%,
+    rgba(99, 88, 238, 1) 94.3%
+  );
+  transition: all 0.475s;
+} */
+.flipup {
+  position: relative;
+  width: 1100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.flipup .card {
+  position: relative;
+  max-width: 300px;
+  height: 215px;
+  background-color: #fff;
+  margin: 30px 10px;
+  padding: 20px 15px;
+
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+  border-radius: 15px;
+}
+
+.flipup .card:hover {
+  height: 350px;
+
+  background: linear-gradient(-45deg, #250202, #ea9393, #f8cfcf);
+}
+
+
+.flipup .card .image {
+  position: relative;
+  width: 150px;
+  height: 260px;
+  top: -40%;
+  left: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.flipup .card .image img {
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+.flipup .card .content {
+  position: relative;
+  top: -140px;
+  padding: 10px 15px;
+  color: #080808ec;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+
+}
+
+.flipup .card:hover .content {
+  margin-top: 30px;
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.2s;
+  /* background-color: #ea9393; */
+
+
+}
+
+
+.typesof {
+
+  height: 90px;
+
+}
+
+.typesof {
+  color: #fff;
+}
+
+.typeof:hover {
+  color: #ea9393;
+}
+
+.services-show {
+  /* background-image: url('Assets/uploads/images/d-1.jpg'); */
+  background-size: cover;
+
+  width: 100%;
+}
+
+.card {
+  border-radius: 5px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-back {
+  /* position: absolute; */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  height: 230px;
+
+
+}
+
+.flip-card-front {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  width: 100%;
+
+
+
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background: linear-gradient(-45deg, #250202, #ea9393, #f8cfcf);
+  color: rgb(18, 17, 17);
+  transform: rotateY(180deg);
+  text-align: center;
+  /* padding-top: 40px; */
+}
+
+.card-body:hover {
+  background: linear-gradient(-45deg, #250202, #ea9393, #f8cfcf);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+
+
+
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Laptop */
+@media screen and (min-width:769px) and (max-width:1025px) {
+  .flipup .card .image {
+    width: 100px;
+    height: 200px;
+  }
+
+  .flip-card-back {
+    height: 190px;
+
+  }
+  .button{
+    width: 100%;
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Tab */
+@media screen and (min-width:426px) and (max-width:769px) {
+  .flipup .card .image {
+    margin-left: 28px;
+  }
+
+  .flip-card-back {
+    height: 140px;
+  }
+
+  .flip-card-back>h1 {
+    font-size: 30px;
+  }
+  .first>a>button{
+    height: 3rem;
+    padding: 0 2rem;
+    margin: 0 35rem;
+    background-size: 400%;
+  }
+  
+
+
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>mobile view */
+@media screen and (max-width:426px) {
+  .flipup .card .image {
+    margin-left: 38px;
+  }
+
+  .flipup .card {
+    max-width: 100%;
+    padding: 30px;
+  }
+  .first>a>button{
+    display: none;
+    margin: 0 0rem;
+  }
+}

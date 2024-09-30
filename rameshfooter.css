@@ -1,0 +1,60 @@
+@media  (max-width:426px) {
+    .mapwidth{
+        width: 100%;
+    }
+  
+}
+
+@media (max-width:769px) and (min-width:426px) {
+    .mapwidth{
+        width: 100%;
+    }
+
+
+
+    
+}
+
+
+
+@media (max-width:1026px) and (min-width:769px) {
+    .mapwidth{
+        width:152%;
+    }
+/* 
+ .quicklinks{
+    padding-left:-80px;
+ }
+
+ 
+.aboutuss{
+    padding-left: -70px;
+}
+
+.iconss{
+    padding-left:-140px;
+} */
+}
+
+
+
+
+
+
+
+#bike{
+    color: white;
+}
+
+/* 
+.quicklinks{
+    padding-left: 80px;
+}
+
+.aboutuss{
+    padding-left: 70px;
+}
+
+.iconss{
+    padding-left: 140px;
+} */
